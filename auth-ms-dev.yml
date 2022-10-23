@@ -1,0 +1,51 @@
+server:
+  port: 9001
+  servlet:
+    context-path: '/auth-ms/'
+
+spring:
+  application:
+    name: auth-ms
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth-ms
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc: 
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  output:
+    ansi:
+      enabled: always
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+logging:
+  level:
+    io.github.gleysongomes.auth: DEBUG
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: INFO
+
+auth:
+  broker:
+    exchange:
+      usuario-event: auth.usuario.event
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
+
