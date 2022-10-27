@@ -4,4 +4,11 @@ server:
 spring:
   application:
     name: api-gateway-ms
+  cloud:
+    gateway:
+      routes:
+      - id: auth-ms
+        uri: lb://AUTH-MS
+        predicates:
+        - Path=/auth-ms/**
 
