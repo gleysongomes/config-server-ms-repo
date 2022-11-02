@@ -2,6 +2,9 @@ app:
   service-registry:
     username: ${SERVICE_REGISTRY_USERNAME}
     password: ${SERVICE_REGISTRY_PASSWORD}
+  auth:
+    senha-jwt: vvi9ed9)^_65$_@!8xrh7@h@x_(n#aes!ms^)=3ps92^l5m3#w_msl-^3e(yd6d_b4=mrg7&gl=na!%brhod*jcnuvlz=2v9s@4r
+    expiracao-jwt-minutos: 30
 
 eureka:
   client:
