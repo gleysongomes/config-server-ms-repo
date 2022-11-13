@@ -53,6 +53,6 @@ app:
   auth:
     key-alias: auth-jwt
     key-store: classpath:auth-jwt.jks
-    key-store-password: '=leb#4b1*jv$+bpg*(t&%w)ee7*_c1f8s-2e1mvm55am48fr1!'
-    key-password: 'fi5d$v!t&l)h!x$mwkaf&mq29_=m^uuq1m0j2j29a=9y6&7_1x'
+    key-store-password: 'nM+kKdANhR4/tyANYHUYmjdho+ZjpvBnVgYvQTZtr9CTrgBdidl5Fnj8OCL6cbxurFUiPPiwpLnNHEmOOQikQA=='
+    key-password: '1SVBeQ4F0KZMPS1nNa+0cmpds4eL7sUiJcWYT1OSewqi4Z9q7X1UDmntAQfxO2ROTOv6OPPVBddu5Qt21BBcNA=='
 
