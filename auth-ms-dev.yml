@@ -49,3 +49,10 @@ management:
           - refresh
           - health
 
+app:
+  auth:
+    key-alias: auth-jwt
+    key-store: classpath:auth-jwt.jks
+    key-store-password: '=leb#4b1*jv$+bpg*(t&%w)ee7*_c1f8s-2e1mvm55am48fr1!'
+    key-password: 'fi5d$v!t&l)h!x$mwkaf&mq29_=m^uuq1m0j2j29a=9y6&7_1x'
+
